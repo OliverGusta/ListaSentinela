@@ -16,10 +16,10 @@ public class Playlist {
         // a nova música passa a ser o último nó da lista, apontando para o sentinela.
 
         novo.anterior = sentinela.anterior;
-        // o "anterior" da nova música passa a ser o antigo último nó da lista.
+        // o anterior da nova música passa a ser o antigo último nó da lista.
 
         sentinela.anterior.proximo = novo;
-        // o "próximo" do antigo último nó, passa a apontar para a nova música.
+        // o próximo do antigo último nó, passa a apontar para a nova música.
 
         sentinela.anterior = novo;
         // o sentinela atualiza sua referência para indicar que o novo nó é o último da lista.
