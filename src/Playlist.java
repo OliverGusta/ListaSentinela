@@ -3,9 +3,9 @@ public class Playlist {
     private No sentinela;
 
     public Playlist(String nome) {
-        sentinela = new No(null);
-        sentinela.anterior = sentinela;
-        sentinela.proximo = sentinela;
+        sentinela = new No(null); // Cria o nó sentinela com música = null
+        sentinela.anterior = sentinela; // Sentinela aponta para si mesma para trás
+        sentinela.proximo = sentinela; // Sentinela aponta para si mesma para frente
     }
 
     public void adicionarMusica(Musica m) {
