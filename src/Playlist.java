@@ -65,7 +65,7 @@ public class Playlist {
                 atual.anterior.proximo = atual.proximo; // Remove a referência ao nó atual no sentido “para frente”
                 atual.proximo.anterior = atual.anterior; // Remove a referência ao nó atual no sentido “para trás”
 
-                // O nó anterior pula o atual e vai direto para a próxima música, removendo-o da lista
+    // O nó anterior pula o atual e vai direto para a próxima música, e o no sucessor aponta direto para o anterior
 
                 System.out.println("Música removida com sucesso.");
                 return true;
