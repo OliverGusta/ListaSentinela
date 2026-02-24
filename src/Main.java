@@ -87,7 +87,10 @@ public class Main {
 
             } else if (e.equalsIgnoreCase("N")) {
                 System.out.println("Ok. Finalizando programa...");
-            }
+            }    
+               else if (!e.equalsIgnoreCase("N") && !e.equalsIgnoreCase("S"))  {
+                System.out.println ("Caractere inválido!")
+            }   
         } else {
             System.out.println("Número inválido. \nTente novamente.");
         }
